@@ -4,7 +4,7 @@ LABEL maintainer="admin@horovitz.dev" version="1.0"
 USER root
 ENV FLUTTER_HOME=${HOME}/sdks/flutter
 
-RUN git clone --branch master https://github.com/flutter/flutter.git
+RUN git clone --branch master https://github.com/flutter/flutter.git ${FLUTTER_HOME}
 
 
 RUN yes | flutter doctor --android-licenses \
