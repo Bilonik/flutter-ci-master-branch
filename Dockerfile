@@ -1,6 +1,9 @@
 FROM cirrusci/android-sdk:30
 LABEL maintainer="admin@horovitz.dev" version="1.0"
 
+USER root
+
+
 RUN git clone --branch master https://github.com/flutter/flutter.git
 
 
