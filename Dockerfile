@@ -19,4 +19,4 @@ RUN flutter config --enable-web \
     && sudo apt-get install -y chromium-browser \
     && sudo rm -rf /var/lib/apt/lists/*
     
-RUN cat flutter doctor -v
+RUN flutter doctor -v
