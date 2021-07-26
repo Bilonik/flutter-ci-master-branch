@@ -7,7 +7,7 @@ ENV FLUTTER_HOME=${HOME}/sdks/flutter \
 ENV FLUTTER_ROOT=$FLUTTER_HOME
 
 ENV PATH ${PATH}:${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin
-ARG FOO23222
+ARG FOO232221
 RUN git clone --branch master https://github.com/flutter/flutter.git ${FLUTTER_HOME}
 
 
