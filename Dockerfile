@@ -7,8 +7,8 @@ ENV FLUTTER_HOME=${HOME}/sdks/flutter \
 ENV FLUTTER_ROOT=$FLUTTER_HOME
 
 ENV PATH ${PATH}:${FLUTTER_HOME}/bin:${FLUTTER_HOME}/bin/cache/dart-sdk/bin
-ARG Febrero04-2022
-RUN git clone --branch master https://github.com/flutter/flutter.git ${FLUTTER_HOME}
+ARG Febrero09-2022
+RUN git clone --branch flutter-2.8-candidate.16 https://github.com/flutter/flutter.git ${FLUTTER_HOME}
 
 
 RUN yes | flutter doctor --android-licenses \
