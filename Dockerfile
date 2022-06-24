@@ -15,8 +15,8 @@ RUN yes | flutter doctor --android-licenses \
     && flutter doctor \
     && chown -R root:root ${FLUTTER_HOME}
     
-RUN sudo apt-get update \
-    && sudo apt-get install -y chromium-browser \
-    && sudo rm -rf /var/lib/apt/lists/*
+# RUN sudo apt-get update \
+#     && sudo apt-get install -y chromium-browser \
+#     && sudo rm -rf /var/lib/apt/lists/*
     
 RUN flutter doctor -v
