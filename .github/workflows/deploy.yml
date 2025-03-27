@@ -26,5 +26,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          platforms: platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64,linux/arm64
           tags: bilonik19/flutter-master-ci:3.29.2
